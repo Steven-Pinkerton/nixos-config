@@ -142,6 +142,7 @@ keyMap = "uk";
      vscode
      openssl
      libvirt
+     figlet
    ];
    programs.bash.shellInit = ''
 TERM=xterm

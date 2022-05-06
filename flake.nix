@@ -1,5 +1,5 @@
 {
-   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.05";
+   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-21.11";
    outputs = { self, nixpkgs }: 
    {
        nixosConfigurations.vm-nixos = nixpkgs.lib.nixosSystem 
@@ -8,8 +8,8 @@
            modules = 
 	   [
 	      (import ./configuration.nix)
-	   ]
-       }
+	   ];
+       };
    };
 }
 
